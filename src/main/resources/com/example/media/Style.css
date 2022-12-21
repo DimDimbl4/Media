@@ -1,0 +1,33 @@
+#BorderPain {
+    -fx-background-color: linear-gradient(#000000, #030303);
+}
+#seekSlider {
+    -fx-background-color: linear-gradient(#030303, #242323);
+}
+#VBox {
+    -fx-background-color: linear-gradient(#242323, #3d3d3d);
+}
+#volume {
+    -fx-background-image: url("Image/icons8-средняя-громкость-32.png");
+}
+.button {
+    -fx-background-color: transparent;
+    -fx-background-size: 30 30;
+    -fx-background-repeat: no-repeat;
+    -fx-background-position: center;
+}
+#openButton {
+    -fx-background-image: url("Image/icons8-проводник-windows-32.png");
+}
+#playButton {
+    -fx-background-image: url("Image/icons8-play-в-круге-32.png");
+}
+#pauseButton {
+    -fx-background-image: url("Image/icons8-пауза-в-кружке-32.png");
+}
+#slowerButton {
+    -fx-background-image: url("Image/icons8-повтор-5-32.png");
+}
+#fasterButton {
+    -fx-background-image: url("Image/icons8-вперед-30-32.png");
+}

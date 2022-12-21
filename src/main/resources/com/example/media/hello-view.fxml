@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Slider?>
+<?import javafx.scene.layout.BorderPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.StackPane?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.media.MediaView?>
+
+<BorderPane fx:id="BorderPain" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" stylesheets="@Style.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.media.MediaController">
+   <bottom>
+      <VBox fx:id="VBox" alignment="TOP_CENTER" prefHeight="40.0" BorderPane.alignment="TOP_CENTER">
+         <children>
+            <HBox alignment="CENTER" prefHeight="40.0">
+               <children>
+                  <Button fx:id="openButton" alignment="TOP_CENTER" mnemonicParsing="false" onAction="#onOpenButtonClick" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="playButton" layoutX="10.0" layoutY="10.0" mnemonicParsing="false" onAction="#playVideo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="pauseButton" layoutX="62.0" layoutY="10.0" mnemonicParsing="false" onAction="#pauseVideo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="slowerButton" layoutX="166.0" layoutY="10.0" mnemonicParsing="false" onAction="#slowerVideo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="fasterButton" layoutX="322.0" layoutY="10.0" mnemonicParsing="false" onAction="#fasterVideo" prefHeight="30.0" prefWidth="30.0">
+                     <HBox.margin>
+                        <Insets right="10.0" />
+                     </HBox.margin></Button>
+                  <Button fx:id="volume" mnemonicParsing="false" prefHeight="30.0" prefWidth="30.0" text="Button">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </Button>
+                  <Slider fx:id="slider" />
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+   </bottom>
+   <center>
+      <StackPane prefHeight="150.0" prefWidth="200.0" BorderPane.alignment="CENTER">
+         <children>
+            <MediaView fx:id="mediaView" fitHeight="200.0" fitWidth="200.0" StackPane.alignment="TOP_LEFT" />
+            <Slider fx:id="seekSlider" majorTickUnit="1.0" minorTickCount="1" prefHeight="30.0" prefWidth="30.0" StackPane.alignment="BOTTOM_CENTER">
+               <StackPane.margin>
+                  <Insets />
+               </StackPane.margin></Slider>
+            <MediaView fx:id="mediaView2" fitHeight="200.0" fitWidth="200.0" StackPane.alignment="BOTTOM_CENTER">
+               <StackPane.margin>
+                  <Insets bottom="50.0" />
+               </StackPane.margin></MediaView>
+            <MediaView fx:id="mediaView3" fitHeight="200.0" fitWidth="200.0" StackPane.alignment="TOP_RIGHT" />
+         </children>
+      </StackPane>
+   </center>
+</BorderPane>
